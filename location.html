@@ -1,13 +1,44 @@
 <html>
-    <head>
-        <h1>PIN YOUR LOCATION</h1>
-    </head>
-    <iframe     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15727.744032956105!2d118.75465673380712!3d9.771482345159022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b5638041da33f9%3A0x48918afbd033e11e!2sSan%20Manuel%2C%20Palawan!5e0!3m2!1sen!2sph!4v1747212895060!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<head>
+    <title>Pin Your Location</title>
     <style>
-        iframe{
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
             width: 100%;
-            height:600px;
-            align-items: center;
+            height: 600px;
+            border: none;
         }
     </style>
+</head>
+<body>
+    <h1>PIN YOUR LOCATION</h1>
+    <a class="home-button" href="main.html">Home</a>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15727.744032956105!2d118.75465673380712!3d9.771482345159022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b5638041da33f9%3A0x48918afbd033e11e!2sSan%20Manuel%2C%20Palawan!5e0!3m2!1sen!2sph!4v1747212895060!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
 </html>
