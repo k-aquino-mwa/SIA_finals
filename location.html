@@ -13,18 +13,20 @@
             margin: 20px;
         }
 
-        .home-button {
+        .button {
             display: inline-block;
-            margin-bottom: 20px;
+            margin: 10px;
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
             text-decoration: none;
+            border: none;
             border-radius: 5px;
             font-size: 16px;
+            cursor: pointer;
         }
 
-        .home-button:hover {
+        .button:hover {
             background-color: #0056b3;
         }
 
@@ -33,12 +35,25 @@
             height: 600px;
             border: none;
         }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>PIN YOUR LOCATION</h1>
-    <a class="home-button" href="main.html">Home</a>
-    
+
+    <div class="button-container">
+
+        <a class="button" href="main.html">Home</a>
+      <button popovertarget="modal" class="button">Submit</button>
+      <div id="modal" popover>
+        <h2>You submitted your feedback!</h2>
+        <button popovertarget="modal">Close</button>
+    </div>
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15727.744032956105!2d118.75465673380712!3d9.771482345159022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b5638041da33f9%3A0x48918afbd033e11e!2sSan%20Manuel%2C%20Palawan!5e0!3m2!1sen!2sph!4v1747212895060!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </body>
 </html>
