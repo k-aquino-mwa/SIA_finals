@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .profile-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .cover-photo {
+      width: 100%;
+      height: 250px;
+      background: url('bg_user.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      bottom: -75px;
+      left: 30px;
+      background: url('profile.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .user-info {
+      padding: 90px 30px 30px;
+    }
+
+    .user-info h2 {
+      margin: 0;
+    }
+
+    .user-info p {
+      color: #555;
+      margin: 8px 0;
+    }
+
+    .user-details {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    .detail-item {
+      margin-bottom: 10px;
+    }
+
+    .detail-item span {
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+      }
+
+      .user-info {
+        padding: 70px 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="cover-photo">
+    <div class="profile-pic"></div>
+  </div>
+  <div class="user-info">
+    <h2>User Name</h2>
+    <p>Mga tungkol sa akin</p>
+
+    <div class="user-details">
+      <div class="detail-item"><span>Work:</span>Carpenter</div>
+      <div class="detail-item"><span>Birthday:</span>September 30, 2005</div>
+      <div class="detail-item"><span>Location:</span>Moreno Ville, San Manuel, PPC, Palawan</div>
+      <div class="detail-item"><span>Joined:</span>January 1,2025</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
